@@ -1,0 +1,89 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, button, p, blockquote, pre, hr, th, td, em{margin:0; padding:0;}
+body{font: 12px/1.5  "微软雅黑",Arial; color:#6a6a6a;-webkit-text-size-adjust:none;}
+h1, h2, h3, h4, h5, h6, button, input, select, textarea{font-size:100%; font-weight:normal}
+fieldset, img{border:0}
+address, caption, cite, code, em, i, strong, th, var{font-style:normal}
+ol, ul{list-style:none}
+table{border-collapse:collapse; border-spacing:0}
+label{cursor:default}
+input,textarea{ outline:none}
+a{text-decoration:none; cursor:pointer;}
+a:hover{text-decoration:none}
+a{color:inherit;}
+a:link{text-decoration:none;}
+.fleft, .uleft li{float:left; display:inline}
+.fright{float:right; display:inline}
+.clear{clear:both;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.no_background{background:none !important;}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/* End hide from IE-mac */
+.no_border{border:0px !important;}
+.no_border_right{border-right:0px !important;}
+.no_margin{margin:0px !important;}
+.no_margin_right{margin-right:0px !important;}
+.hand{cursor:pointer}
+.m0{margin:0px;}
+.p0{padding:0px;}
+.w_1{width:100%; overflow:hidden;}
+.ml10{ margin-left:10px !important;}
+.ml12{ margin-left:12px !important;}
+.ml15{ margin-left:15px !important;}
+.ml20{ margin-left:20px !important;}
+.ml25{ margin-left:25px !important;}
+.ml30{ margin-left:30px !important;}
+.ml40{ margin-left:40px !important;}
+.ml55{ margin-left:55px !important;}
+.ml5{ margin-left:5px   !important;}
+.mr10{ margin-right:10px!important;}
+.mr15{ margin-right:15px!important;}
+.mr20{ margin-right:20px!important;}
+.mr30{ margin-right:30px!important;}
+.mr50{ margin-right:50px!important;}
+.mt5{ margin-top:5px   !important;}
+.mt10{ margin-top:10px !important;}
+.mt16{ margin-top:16px !important;}
+.mt20{ margin-top:20px !important;}
+.mt25{ margin-top:25px !important;}
+.mt30{ margin-top:30px !important;}
+.mt40{ margin-top:40px !important;}
+.mt50{ margin-top:50px !important;}
+.mt60{ margin-top:60px !important;}
+.mb10{ margin-bottom:10px !important;}
+.mb50{ margin-bottom:50px !important;}
+.mb30{margin-top:30px !important;}
+.h10{ height:10px; overflow:hidden;}
+.ml200{margin-left:200px !important;}
+.ml120{margin-left:120px !important;}
+.lh25{ line-height:25px !important;}
+.pt20{ padding-top:20px !important;}
+.pb20{ padding-bottom:20px !important;}
+.pb30{ padding-bottom:30px !important;}
+.pt10{ padding-top:10px !important;}
+.plr10{ padding:0px 10px !important; }
+.plr20{ padding:0px 20px !important; }
+.plr30{ padding:0px 30px !important; }
+.plr50{ padding:0px 50px !important; }
+
+.pad10{ padding:10px !important;}
+.pad20{ padding:20px !important; }
+.tr{ text-align:right !important;}
+.tl{ text-align:left !important;}
+.f12{ font-size:12px !important;}
+.f14{ font-size:14px !important;}
+.f16{ font-size:16px !important;}
+.f18{ font-size:18px !important;}
+.f20{ font-size:20px !important;}
+.f24{ font-size:24px !important;}
+.f28{ font-size:28px !important;}
+.fweiruanyahei{ font-family:"微软雅黑";}
+.fsongti{ font-family:"宋体";}
+.fxinsongti{ font-family:"新宋体" ;}
+.colorwhite{ color:#FFF !important;}
+.colorblack{ color:#000 !important;}
+.colorgray{ color:#595757 !important;}
+.textcenter{ text-align:center !important;}
+.fontweightbold{ font-weight:bold !important;}

@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="佰维网络科技有限公司  http://www.100vic.cn">
+    <title>订单统计2</title>
+    <link type="text/css" rel="stylesheet" href="css/gobal.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+<!--[if lte IE 6]>
+<SCRIPT src="js/iepng.js" type="text/javascript"></SCRIPT>
+<script> 
+    EvPNG.fix('div, ul, img, li, input,a'); 
+ </script>
+<![endif]-->
+</head>
+<body>
+     
+     <!--头部-->
+     <div class="header">
+        <div class="layout clearfix">
+           <div class="fleft logo"><a href="index.html"><img src="skin/logo.jpg" /></a></div>
+           <div class="head-search fleft clearfix">
+               <a class="shou-i su-1 fleft" href="#">手机微商城</a>
+               <a class="shou-i su-2 fleft" href="#">购物车</a>
+               <div class="fleft search">
+                  <input class="search-text" type="text" value="找到好课程" onfocus="if(this.value=='找到好课程')this.value='';" onblur="if(this.value=='')this.value='找到好课程';" />
+                  <input class="search-btn" type="submit" value="" />
+               </div>
+               <a class="shou-i su-3 fleft" href="login.html">马上登录</a>
+               <a class="shou-i su-4 fleft" href="zhuce.html">注册</a>
+           </div>
+        </div>
+     </div>
+     
+     <!--banner-->
+     <div class="banner">
+		 <div class="banner_f">
+            <div class="banner_s" style="display:block;">
+                <a href="#"><img src="images/banner.jpg"/></a>
+            </div>
+            <div class="banner_s">
+                <a href="#"><img src="images/banner.jpg"/></a>
+            </div>
+            <div class="banner_s">
+                <a href="#"><img src="images/banner.jpg"/></a>
+            </div>
+            <div class="banner_s">
+                <a href="#"><img src="images/banner.jpg"/></a>
+            </div>   
+		 </div>
+         <div>
+            <ul class="banner_btn">
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+             </ul>
+         </div>
+	 </div>
+     
+     <!--nav-->
+     <div class="head-nav">
+        <div class="layout clearfix">
+           <div class="nav_dt fleft">
+              <a class="nav_dt_a" href="#">所有课程分类</a>
+              <div class="nav_dd-inner" style="display:none;">
+                 <ul>
+                   <li>
+                     <h1 class="li-h1"><a href="#">教与学（教辅）</a></h1>
+                     <p><a style="color:#b50029;" href="#">小学</a></p>
+                     <p>
+                       <a href="#">一年级</a>
+                       <a href="#">二年级</a>
+                       <a href="#">三年级</a>
+                       <a href="#">四年级</a>
+                       <a href="#">五年级</a>
+                       <a href="#">六年级</a>
+                     </p>
+                     <p>
+                       <a href="#">语文</a>
+                       <a href="#">数学</a>
+                       <a href="#">英语</a>
+                       <a href="#">小升初</a>
+                     </p>
+                     <hr class="c-hr" />
+                     <p><a style="color:#b50029;" href="#">初中</a></p>
+                     <p>
+                       <a href="#">七年级</a>
+                       <a href="#">八年级</a>
+                       <a href="#">九年级</a>
+                     </p>
+                     <p>
+                       <a href="#">语文</a>
+                       <a href="#">数学</a>
+                       <a href="#">英语</a>
+                       <a href="#">历史</a>
+                       <a href="#">生物</a>
+                       <a href="#">地理</a>
+                       <br />
+                       <a href="#">物理</a>
+                       <a href="#">化学</a>
+                       <a href="#">思想品德</a>
+                       <a href="#">中考</a>
+                     </p>
+                     <h2 class="li-h2">
+                       <a href="#">听力</a>
+                       <a href="#">课件</a>
+                       <a href="#">试卷</a>
+                       <a href="#">作文</a>
+                       <a href="#">字帖</a>
+                       <a href="#">教师用书</a>
+                     </h2>
+                   </li>
+                   <li>
+                     <h3 class="li-h3"><a href="#">芸香书屋（品牌图书）</a></h3>
+                     <p>
+                       <a href="#">陈琴经典素读</a>
+                       <a href="#">萧荣年书法课堂</a>
+                     </p>
+                     <hr class="c-hr" />
+                   </li>
+                   <li>
+                     <h3 class="li-h3"><a href="#">少儿读物</a></h3>
+                     <p>
+                       <a href="#">0-2岁</a>
+                       <a href="#">3-6岁</a>
+                       <a href="#">7-10岁</a>
+                       <a href="#">11-14岁</a>
+                     </p>
+                     <p>
+                       <a href="#">国学</a>
+                       <a href="#">书法</a>
+                       <a href="#">动漫</a>
+                       <a href="#">绘本</a>
+                       <a href="#">科普</a>
+                       <a href="#">手工</a>
+                       <a href="#">幼儿启蒙</a>
+                       <a href="#">儿童文学</a>
+                     </p>
+                   </li>
+                 </ul>
+              </div>
+           </div>
+           <div class="nav_list fleft">
+              <ul>
+                 <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
+                 <li><a href="#">图书商城</a></li>
+                 <li><a href="#">资讯动态</a></li>
+                 <li><a href="#">资料下载</a></li>
+                 <li><a href="#">互动问答</a></li>
+                 <li><a href="#">关于我们</a></li>
+                 <li><a href="#">购书指南</a></li>
+              </ul>
+              <span class="ke-fu fright"><a href="#">在线客服</a></span>
+           </div>
+        </div>
+     </div>
+     
+     <div class="index-main"> 
+        <div class="ny-bg">
+           <div class="layout">
+               <div class="adder mb50">
+                  <a href="#">首页</a>>
+                  <span>经销商</span>
+               </div>
+               <h2 class="ny-h2"><span>个人中心</span></h2>
+               <div class="ny-main-box">
+                  <div class="ny-fl-box fleft">
+                     <ul class="n-f-ul">
+                       <li class="hover"><a href="#">我的订单</a></li>
+                       <li><a href="#">我的资料</a></li>
+                       <li><a href="#">我的收藏</a></li>
+                       <li><a href="#">修改密码</a></li>
+                       <li><a href="#">积分专区</a></li>
+                     </ul>
+                  </div>
+                  <div class="ny-fr-box fleft">
+                      <div class="ding-dan mt50">
+                         <div class="ding-tab">
+                            <a class="on" href="#">按订单统计</a>
+                            <span>|</span>
+                            <a href="#">按书目统计</a>
+                         </div>
+                         <div class="d-sele-div">
+                            <select class="se-d1">
+                                <option>2015</option>
+                                <option>2014</option>
+                                <option>2013</option>
+                                <option>2012</option>
+                            </select>
+                            <span>年</span>
+                            <select class="se-d1">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                            </select>
+                            <span>月</span>
+                            <select class="se-d1">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                            </select>
+                            <span>日</span>
+                            <div class="fu-zb">
+                               <span>GZHZ42456548</span>
+                               <a href="#">复制编码</a>
+                            </div>
+                         </div>
+                         <div class="ding-table">
+                            <table>
+                                <tr class="tr1">
+                                   <th width="255">订单号</th>
+                                   <th width="140">购买人</th>
+                                   <th width="140">地区</th>
+                                   <th width="140">销量</th>
+                                   <th width="140">总价</th>
+                                   <th width="160">日期</th>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                                <tr>
+                                   <td>GZ24055467976161</td>
+                                   <td>欧阳靖</td>
+                                   <td>东莞</td>
+                                   <td>2454件</td>
+                                   <td>￥164.35</td>
+                                   <td>2015-06-18</td>
+                                </tr>
+                            </table>
+                         </div>
+                         <div class="ding-page">
+                            <a class="next" href="#">上一页</a>
+                            <a class="on" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a class="st" href="#">下一页</a>
+                         </div>
+                         <div class="ding-liang">
+                            <div class="dt1">订单量</div>
+                            <div class="fleft" style="width:644px;">
+                               <select class="se-d1 se-mr">
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                </select>
+                                <span class="sp-r">年</span>
+                                <strong class="t-ac" style="font-size:36px;">15698144</strong>
+                                <span class="sp-r">元</span>
+                                <select class="se-d1 se-mr">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
+                                <span class="sp-r">月</span>
+                                <strong class="t-ac" style="font-size:36px;">15698144</strong>
+                                <span class="sp-r">元</span>
+                            </div>
+                            <div class="fleft dt2">
+                               <a href="#">下载订单列表</a>
+                            </div>
+                         </div>
+                          
+                      </div>
+                  </div>
+               </div>
+           </div>
+        </div>     
+    
+       <!--底部-->
+       <div class="foot-box">
+          <div class="layout por-t">
+             <!--返回顶部-->
+             <div class="fan-hui">
+                <span class="scroll_top"></span>
+                <a href="#"></a>
+             </div>
+             <!--返回顶部-->
+              <div class="bian-k mt16">
+                  <h1 class="in-w-h1">
+                    <span>最近浏览过的</span>
+                    <a href="#">/更多</a>
+                  </h1>
+                  <div class="zui-jin zui-jin1">
+                     <span class="in-zu-btn in-zu-tf in-zu-tf1"></span>
+                     <span class="in-zu-btn in-zu-tr in-zu-tr1"></span>
+                     <div class="zui-dl zui-dl1">
+                        <ul>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                          <li>
+                             <a href="#"><img width="149" height="146" src="images/img3.jpg" /></a>
+                             <h1>广东中考考前押题卷</h1>
+                             <p class="in-zu-d">
+                               <span class="fleft cr-w">￥57.00</span>
+                               <span class="fright">销量<i class="cr-w">15000</i></span>
+                             </p>
+                          </li>
+                        </ul>
+                     </div>
+                  </div>  
+              </div> 
+              <div class="bian-k mt16">
+                 <div class="in-serven">
+                    <dl class="in-ser-dl">
+                      <dt class="dt1"><a href="#">购书指南</a></dt>
+                      <dd><a href="#">购书流程</a></dd>
+                      <dd><a href="#">配送支付</a></dd>
+                      <dd><a href="#">常见问题</a></dd>
+                      <dd><a href="#">售后服务</a></dd>
+                    </dl>
+                    <dl class="in-ser-dl">
+                      <dt class="dt2"><a href="#">网站规则</a></dt>
+                      <dd><a href="#">注册登录</a></dd>
+                      <dd><a href="#">会员制度</a></dd>
+                      <dd><a href="#">积分规则</a></dd>
+                      <dd><a href="#">免责声明</a></dd>
+                    </dl>
+                    <dl class="in-ser-dl">
+                      <dt class="dt3"><a href="#">关于我们</a></dt>
+                      <dd><a href="#">官方微信</a></dd>
+                      <dd><a href="#">新浪微博</a></dd>
+                      <dd><a href="#">腾讯微博</a></dd>
+                    </dl>
+                    <div class="in-contact">
+                       <span>投稿邮箱</span>
+                       <p>jyxue020@126.com</p>
+                       <p>在线客服<a href="#"><img src="skin/icon10.png" /></a></p>
+                       <p>工作时间：周一至周五10:00-18:00</p>
+                       <p style="text-align:center; color:#999999;">法定节假日除外</p>
+                    </div>
+                 </div>
+               </div>
+             </div>
+             <div class="in-bm-link">
+                <div class="fleft"><strong>友情链接</strong></div>
+                <div class="fleft i-link">
+                  <a href="#">中华人民共和国教育部</a>
+                  <a href="#">北京市教委</a>
+                  <a href="#">美国留学</a>
+                  <a href="#">知好乐网校</a>
+                  <a href="#">考德上公培</a>
+                  <a href="#">在线英语培训</a>
+                  <a href="#">公务员考试网</a>
+                  <a href="#">坦途教育网</a>
+                  <a href="#">师兄帮帮忙</a>
+                  <a href="#">波浪网</a>
+                  <a href="#">智康1对1</a>
+                  <a href="#">学习方法网</a>
+                  <a href="#">后盾网</a>
+                  <a href="#">考试界</a>
+                  <a href="#">学习网</a>
+                  <a href="#">在线考试中心</a>
+                  <a href="#">网络教育平台</a>
+                  <a href="#">尚友网</a>
+                  <a href="#">高顿网校</a>
+                  <a href="#">大耳朵英语</a>
+                  <a href="#">互联网招聘</a>
+                  <a href="#">中大网校</a>
+                  <a href="#">尚学堂</a>
+                </div>
+             </div>
+             <div class="in-ft-a">
+                 <a href="#">关于百度传课</a>
+                 <a href="#">百度传课帮助</a>
+                 <a href="#">意见反馈</a>
+                 <a href="#">联系方式</a>
+                 <a href="#">招聘信息</a>
+                 <a href="#">手机触屏版</a>
+             </div>
+             <p style="text-align:center; line-height:35px;">京ICP证130265号 Copyright&copy;2015使用百度前必读 百度传课Chuanke.com</p>
+        </div>
+           
+     </div>
+     
+     <!--右侧浮框-->
+     <div class="xuanfu">
+        <ul>
+          <li>
+            <span class="sn1"></span>
+            <div class="xuan-box dt1">
+               <div class="xf-main">
+                  <em class="x-sn">服务热线</em>
+                  <div style="margin:15px 0;">
+                     <h1>020-8903 1060</h1>
+                     <h1>020-8903 1491</h1>
+                  </div>
+                  <p style="font-size:14px; color:#FFF;">客服咨询时间：9:00 - 16：00</p>
+                  <p style="font-size:14px; color:#FFF;">投稿邮箱： jyxue020@126.com</p>
+               </div>
+            </div>
+          </li>
+          <li>
+            <span class="sn2"><a style="display:block; width:50px; height:50px;" href="#"></a></span>
+          </li>
+          <li>
+            <span class="sn3"></span>
+            <div class="xuan-box dt3">
+               <div class="weixin">
+                  <img width="170" height="170" src="skin/ewm.png" />
+               </div>
+            </div>
+          </li>
+          <li>
+            <span class="sn4"><a style="display:block; width:50px; height:50px;" href="#"></a></span>
+          </li>
+        </ul>
+     </div>
+     
+</body>
+</html>
